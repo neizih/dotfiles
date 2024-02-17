@@ -1,0 +1,11 @@
+mod1 + Return 
+	st
+
+mod1 + Shift_R
+	~/.scripts/ck.sh ;  kill -34 $(pgrep -f "sleep") ;
+
+mod1 + y 
+	pamixer --increase 15 ; kill -34 $(pgrep -f "sleep") ;
+
+mod1 + t 
+	pamixer --decrease 15 ; kill -34 $(pgrep -f "sleep");
